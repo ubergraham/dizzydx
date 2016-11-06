@@ -1,0 +1,173 @@
+/* latin */
+@font-face {
+  font-family: 'Antic Regular';
+  font-style: regular;
+  font-weight: 400;
+  src: local('Antic Slab'), local('AnticSlab-Regular'), url(fonts/antic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+
+html,
+body {
+height: 100%;
+font-family: 'Domine', serif;
+
+}
+
+
+h1,
+h2,
+h3, h4,
+p.lead {
+font-family: 'Montserrat', serif;
+font-weight: bold;
+}
+
+h1 {
+font-size: 80px;
+color: #DDCCEE;
+}
+
+h4 {text-align: center;}
+
+
+.lead {
+color: #DDCCEE;
+}
+
+.btn {font-size: 90%;}
+
+
+@media only screen and (min-width : 768px) {
+.is-table-row {
+    display: table;
+}
+.is-table-row [class*="col-"] {
+    float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+}
+
+/* Custom container */
+
+.container-full {
+margin: 0 auto;
+width: 100%;
+background-color: #110022;
+color: #eee;
+overflow: hidden;
+}
+
+.container-full a {
+color: #efefef;
+text-decoration: none;
+}
+
+.v-center {}
+
+h3, h4 {
+margin: 15px 0;
+}
+
+
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+/*
+ * Styles copied from the Grid example to make grid rows & columns visible.
+ */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+h4 {
+  margin-top: 25px;
+}
+.row {
+  margin-bottom: 20px;
+}
+.row .row {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  /*border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);*/
+}
+
+/*
+ * Callout styles copied from Bootstrap's main docs.
+ */
+/* Common styles for all types */
+.bs-callout {
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 3px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code {
+  background-color: #fff;
+  border-radius: 3px;
+}
+/* Variations */
+.bs-callout-danger {
+  background-color: #fdf7f7;
+  border-color: #d9534f;
+}
+.bs-callout-danger h4 {
+  color: #d9534f;
+}
+.bs-callout-warning {
+  background-color: #fcf8f2;
+  border-color: #f0ad4e;
+}
+.bs-callout-warning h4 {
+  color: #f0ad4e;
+}
+.bs-callout-info {
+  background-color: #f4f8fa;
+  border-color: #5bc0de;
+}
+.bs-callout-info h4 {
+  color: #5bc0de;
+}
+
+.btn-group {
+  margin-bottom:1em;
+}
+
+table label.btn-primary.active {
+  background-color:purple;
+}
+
+table td {padding: 0.5rem;}
+
+table {background:#efefef; border: 3px solid purple;}
+
+#result_row {background:purple;color:#fff;}
+
+input[type=submit] {margin-bottom: 1em;;}
+
+hr {margin: 5em 0;}
+
+dd {margin-bottom:1em;}
