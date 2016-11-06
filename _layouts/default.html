@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+
+<head>
+
+{% include header.html %}
+
+</head>
+
+
+
+
+<body>
+
+{% include nav.html %}
+
+
+<div class="container">
+    <div class="col-xl-12 text-xs-center">
+      <h3>{{page.heading}}</h3>
+
+    </div>
+
+
+    <div class="row">
+    <div class="col-xl-12">
+
+   {{content}}
+
+ </div>
+ </div>
+
+<!-- close container -->
+ </div>
+
+
+
+
+
+
+ <script type='text/javascript'>
+
+   $(function() {
+
+
+     $('form').on('submit', function()
+ {
+
+ eyes = $('input[name=eyes]:checked').val();
+ nystagmus = $('input[name=nystagmus]:checked').val();
+ skew = $('input[name=skew]:checked').val();
+
+ //console.log(eyes+nystagmus+skew);
+
+
+
+ if (eyes == 'notrack' && nystagmus == 'constant' && skew == 'normal') {
+   $('#results').text('Peripheral Cause of Vertigo Very Likely. Consider steroids as this patient likely has vestibular neuritis or labrynthitis and ENT or neurology referral. Experts suggest that if the below algorithm is normal, the patient can be safely discharged home.');
+ }
+
+
+ else   if (eyes == 'nl' && nystagmus == 'changing' && skew == 'deviate') {
+   $('#results').text('Central Cause of Vertigo Very Likely. Urgent MRI neuroimaging and hopsital admission is recommended.');
+ }
+
+ else {
+   $('#results').text('Unclear Cause of Dizziness. Consider Neurology consultation and/or MRI neuroimaging.');
+
+ }
+
+
+ return false;
+
+
+ }
+    );
+
+   });
+
+ </script>
+
+</body>
+
+</html>

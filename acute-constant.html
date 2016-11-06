@@ -1,76 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+---
+layout: default
+title: Welcome to Dizzy Dx!
+heading: Got a Dizzy Patient and Not Sure What to Do?
+permalink: /acute-constant/
+---
 
-<!--  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="https://v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="/styles.css"> -->
-
-  <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-  <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/font-awesome.min.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Domine|Montserrat" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-
-
-  <style type="text/css">
-
-  </style>
-
-  <title>Acute and Constant Dizziness — Dizzy DDx</title>
-
-
-</head>
-
-<body>
-  <nav class="navbar navbar-dark navbar-full" style="background-color:purple;">
-  <a class="navbar-brand" href="#">Dizzy DDx</a>
-  <ul class="nav navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="pathway.html">Pathway</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="myths.html">Myths and Pitfalls</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="faq.html">FAQ</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="about.html">About</a>
-    </li>
-  </ul>
-
-
-</nav>
-
-
-
-
-<div class="container-full">
-    <div class="col-xl-12 text-xs-center v-center">
-      <h1>Dizzy DDx</h1>
-    </div>
-
-</div>
-<!-- /container full -->
-<div class="container">
-    <div class="col-xl-12 text-xs-center">
       <h3>Acute and Constant Vestibular Syndromes</h3>
 
     </div>
@@ -91,62 +25,63 @@ on how to do these exams, <a href="#exam">scroll below</a>. Otherwise, fill out 
 
 <h4>HINTS Testing Responses</h4>
 <table width="100%">
-<form>
-<tr><td style="vertical-align:"><a href="#headimpulse_tutorial"><i class="fa fa-info-circle" aria-hidden="true"></i></a> Head Impulse Testing </td>
+  <form>
+  <tr><td style="vertical-align:"><a href="#headimpulse_tutorial"><i class="fa fa-info-circle" aria-hidden="true"></i></a> Head Impulse Testing </td>
+    <td>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary" style="
+      margin-right: 5px;
+      border-bottom-right-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+  ">
+      <input type="radio" name="eyes" id="eyes_normal" value="nl" autocomplete="off"> Eyes Track Normally
+    </label>
+    <label class="btn btn-primary" style="  border-bottom-left-radius: 0.25rem;
+      border-top-left-radius: 0.25rem;">
+      <input type="radio" name="eyes" id="eyes_notrack" value="notrack" autocomplete="off"> Eyes Don't Track / Jump Back to Focus
+    </label>
+  </div>
+  </td>
+  </tr>
+  <tr><td><a href="#nystagmus_tutorial"><i class="fa fa-info-circle" aria-hidden="true"></i></a> Nystagmus Testing</td>
+  <td><div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary" style="
+      margin-right: 5px;
+      border-bottom-right-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+  ">
+      <input type="radio" name="nystagmus" id="nystagmus_constant" value="constant" autocomplete="off"> Horizontal-Only; Direction Stays Same
+    </label>
+    <label class="btn btn-primary" style="  border-bottom-left-radius: 0.25rem;
+      border-top-left-radius: 0.25rem;">
+      <input type="radio" name="nystagmus" id="nystagmus_changing" value="changing" autocomplete="off"> Vertical, Rotational, or Direction-Changing
+    </label>
+  </div>
+  </td></tr>
+  <tr>
+  <td><a href="#skew_tutorial"><i class="fa fa-info-circle" aria-hidden="true"></i></a> Skew Deviation Testing</td>
   <td>
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary" style="
-    margin-right: 5px;
-    border-bottom-right-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-">
-    <input type="radio" name="eyes" id="eyes_normal" value="nl" autocomplete="off"> Eyes Track Normally
-  </label>
-  <label class="btn btn-primary" style="  border-bottom-left-radius: 0.25rem;
-    border-top-left-radius: 0.25rem;">
-    <input type="radio" name="eyes" id="eyes_notrack" value="notrack" autocomplete="off"> Eyes Don't Track / Jump Back to Focus
-  </label>
-</div>
-</td>
-</tr>
-<tr><td><a href="#nystagmus_tutorial"><i class="fa fa-info-circle" aria-hidden="true"></i></a> Nystagmus Testing</td>
-<td><div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary" style="
-    margin-right: 5px;
-    border-bottom-right-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-">
-    <input type="radio" name="nystagmus" id="nystagmus_constant" value="constant" autocomplete="off"> Horizontal-Only; Direction Stays Same
-  </label>
-  <label class="btn btn-primary" style="  border-bottom-left-radius: 0.25rem;
-    border-top-left-radius: 0.25rem;">
-    <input type="radio" name="nystagmus" id="nystagmus_changing" value="changing" autocomplete="off"> Vertical, Rotational, or Direction-Changing
-  </label>
-</div>
-</td></tr>
-<tr>
-<td><a href="#skew_tutorial"><i class="fa fa-info-circle" aria-hidden="true"></i></a> Skew Deviation Testing</td>
-<td>
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary" style="
-    margin-right: 5px;
-    border-bottom-right-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-">
-    <input type="radio" name="skew" id="skew_deviate" value="deviate" autocomplete="off"> Eyes Deviate to Correct
-  </label>
-  <label class="btn btn-primary" style="  border-bottom-left-radius: 0.25rem;
-    border-top-left-radius: 0.25rem;">
-    <input type="radio" name="skew" id="skew_normal" value="normal" autocomplete="off"> Eyes Do Not Deviate
-  </label>
-</div>
-</td></tr>
-<tr><td></td><td>
-<input type="submit" value="Submit" id="submit" class="btn btn-warning" /></td></tr>
-<tr id="result_row"><td colspan="2">
-  <strong>Results:</strong><br/><span id="results"> </span></td></tr>
-</form>
-</table>
+  <div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary" style="
+      margin-right: 5px;
+      border-bottom-right-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+  ">
+      <input type="radio" name="skew" id="skew_deviate" value="deviate" autocomplete="off"> Eyes Deviate to Correct
+    </label>
+    <label class="btn btn-primary" style="  border-bottom-left-radius: 0.25rem;
+      border-top-left-radius: 0.25rem;">
+      <input type="radio" name="skew" id="skew_normal" value="normal" autocomplete="off"> Eyes Do Not Deviate
+    </label>
+  </div>
+  </td></tr>
+  <tr><td></td><td>
+  <input type="submit" value="Submit" id="submit" class="btn btn-warning" /></td></tr>
+  <tr id="result_row"><td colspan="2">
+    <strong>Results:</strong><br/><span id="results"> </span></td></tr>
+  </form>
+  </table>
+
 
 
 
@@ -159,7 +94,7 @@ on how to do these exams, <a href="#exam">scroll below</a>. Otherwise, fill out 
 <a name="algorithm"></a>
 <h3>Acute Vestibular Syndrome Safe Discharge Algorithm</h3>
 
-<img src="img/acute-constant-discharge-algorithm.png"  width="66%" height="66%" />
+<img src="/img/acute-constant-discharge-algorithm.png"  width="66%" height="66%" />
 <p><small>USING THE PHYSICAL EXAMINATION TO DIAGNOSE PATIENTS WITH ACUTE DIZZINESS AND VERTIGO
 Jonathan A. Edlow, MD* and David Newman-Toker, MD, PHD†
 *Department of Emergency Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School, Boston, Massachusetts and †The Johns Hopkins Hospital, Department of Neurology, The Johns Hopkins University School of Medicine, Bloomberg School of Public Health, The Johns Hopkins University, Baltimore, Maryland
@@ -277,55 +212,3 @@ Just like any other physical exam manuever, it will get easier with time. A smar
 <br/>
 
           </div>
-  </div>
-  <!-- /row -->
-
-</div>
-
-
-
-
-<script type='text/javascript'>
-
-  $(function() {
-
-
-    $('form').on('submit', function()
-{
-
-eyes = $('input[name=eyes]:checked').val();
-nystagmus = $('input[name=nystagmus]:checked').val();
-skew = $('input[name=skew]:checked').val();
-
-//console.log(eyes+nystagmus+skew);
-
-
-
-if (eyes == 'notrack' && nystagmus == 'constant' && skew == 'normal') {
-  $('#results').text('Peripheral Cause of Vertigo Very Likely. Consider steroids as this patient likely has vestibular neuritis or labrynthitis and ENT or neurology referral. Experts suggest that if the below algorithm is normal, the patient can be safely discharged home.');
-}
-
-
-else   if (eyes == 'nl' && nystagmus == 'changing' && skew == 'deviate') {
-  $('#results').text('Central Cause of Vertigo Very Likely. Urgent MRI neuroimaging and hopsital admission is recommended.');
-}
-
-else {
-  $('#results').text('Unclear Cause of Dizziness. Consider Neurology consultation and/or MRI neuroimaging.');
-
-}
-
-
-return false;
-
-
-}
-   );
-
-  });
-
-</script>
-
-</body>
-
-</html>
